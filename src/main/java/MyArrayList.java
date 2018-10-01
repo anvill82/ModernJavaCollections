@@ -2,18 +2,6 @@ import java.util.*;
 
 public class MyArrayList<E> implements List<E> {
 
-    public static void main(String[] args) {
-        List<String> ls = new MyArrayList<>();
-
-        ls.add("Jim");
-        ls.add("Jim");
-        ls.add("Jim");
-        ls.add("Jim");
-        ls.add("Jim");
-
-        System.out.println(ls.toString());
-    }
-
     @SuppressWarnings("unchecked")
     private E[] data = (E[]) (new Object[10]);
     private int count = 0;
